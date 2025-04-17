@@ -10,7 +10,7 @@ import IconLink from "./react/IconLink";
 		<div class="internal-links">
 			{
 				config.nav.map((nav) => (
-					<HeaderLink href={nav.link}>{nav.title}</HeaderLink>
+					<HeaderLink href={import.meta.env.BASE_URL + nav.link}>{nav.title}</HeaderLink>
 				))
 			}
 		</div>
