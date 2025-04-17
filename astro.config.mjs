@@ -7,6 +7,7 @@ import tinaDirective from "./astro-tina-directive/register"
 
 // https://astro.build/config
 export default defineConfig({
-	site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
+	site: 'https://garanas.github.io',
+	base: 'website-astro-tina',
 	integrations: [mdx(), sitemap(), react(), tinaDirective()],
 });
