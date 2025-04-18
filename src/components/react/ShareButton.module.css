@@ -1,0 +1,42 @@
+/* src/components/ShareButton.module.css */
+.container {
+    /* Base container styles for the share button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    color: currentColor;
+    position: relative;
+}
+
+.container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.container:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.icon {
+    /* Styles specific to the share icon */
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.successAnimation {
+    animation: successPulse 1s ease-in-out;
+}
+
+@keyframes successPulse {
+    0% { background-color: transparent; }
+    50% { background-color: #4caf50; }
+    100% { background-color: transparent; }
+}
