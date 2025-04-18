@@ -41,6 +41,7 @@ export const ShareButton = ({ url, title, description }: ShareButtonProps) => {
         <button
             className={`${styles.container} ${isAnimating ? styles.successAnimation : ''}`}
             onClick={handleShare}
+            data-is-animating={isAnimating ? 'true' : undefined}
             title="Click to share"
             type="button"
             aria-label="Share content"
